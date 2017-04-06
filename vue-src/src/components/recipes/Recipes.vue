@@ -61,3 +61,10 @@
     }
   }
 </script>
+
+<style>
+  .modal-body {
+    max-height: 70vh;
+    overflow-y: scroll;
+  }
+</style>
