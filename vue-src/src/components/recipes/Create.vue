@@ -116,6 +116,18 @@
         this.$http
           .post('api/recipes', this.recipe)
           .then((response) => {
+            this.recipe = {
+              name: '',
+              img: '',
+              ingredients: [{
+                name: '',
+                qty: 0,
+                unit: ''
+              }],
+              steps: [
+                ''
+              ]
+            };
             this.$emit('submitted');
           });
       }
